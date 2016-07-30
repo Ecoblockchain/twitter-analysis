@@ -1,0 +1,6 @@
+.DS_*
+elastic/
+R/
+oauth.txt
+data/*
+!.gitkeep
