@@ -11,7 +11,7 @@ from sys import exit
 from re import sub
 
 ## What to search for
-SEARCH_TERMS = ["#jesus", "#pizza", "@thiagohersan"]
+SEARCH_TERMS = ["#vemprarua", "#lulanacadeia", "#somostodosmoro", "#vemPraRua31Julho", "#foradilma", "#DilmaNuncaMais"]
 
 class TwitterStreamReceiver(TwythonStreamer):
     def __init__(self, *args, **kwargs):
@@ -57,6 +57,7 @@ def setup():
 
     ## start db
     fileName = slugify(" ".join(SEARCH_TERMS)).replace('-',' ').title().replace(' ','')
+    fileName = "coxinha-31-julho"
     myDB = TinyDB('../data/%s.json'%fileName)
 
 def cleanText(text):
